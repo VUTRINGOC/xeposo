@@ -112,3 +112,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     createPuzzle();
 });
+  // Thêm sự kiện click cho nút hướng dẫn
+    instructionButton.addEventListener('click', function () {
+        alert("- Khi nhấn chuột nút số cạnh nút trống thì sẽ đổi số đó cho ô trống.\n- Trò chơi kết thúc khi thứ tự các ô được sắp xếp theo chiều tăng dần.");
+    });
+
+    // Thêm code xử lý sự kiện khi bắt đầu trò chơi (có thể thêm sau)
+    startButton.addEventListener('click', function () {
+        // Code để bắt đầu trò chơi khi nút "Bắt đầu" được nhấn
+    });
