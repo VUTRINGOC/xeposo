@@ -1,3 +1,4 @@
+/* CSS cho màn hình máy tính */
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -35,4 +36,24 @@ button {
 
 button.empty {
     visibility: hidden;
+}
+
+/* CSS cho màn hình di động */
+@media (max-width: 768px) {
+    .title {
+        font-size: 18px; /* Đổi kích thước font cho điện thoại */
+    }
+
+    #puzzle {
+        grid-template-columns: repeat(4, 20vw); /* Đổi kích thước ô cho điện thoại */
+        grid-template-rows: repeat(4, 20vw); /* Đổi kích thước ô cho điện thoại */
+        gap: 3vw; /* Đổi kích thước ô cho điện thoại */
+        margin: 10vw 0; /* Đổi kích thước ô cho điện thoại */
+    }
+
+    button {
+        width: 20vw; /* Đổi kích thước button cho điện thoại */
+        height: 20vw; /* Đổi kích thước button cho điện thoại */
+        font-size: 6vw; /* Đổi kích thước button cho điện thoại */
+    }
 }
