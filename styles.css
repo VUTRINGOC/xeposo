@@ -6,6 +6,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    background-color: #f0f0f0; /* Màu nền */
 }
 
 .container {
@@ -14,6 +15,7 @@ body {
 
 .title {
     font-size: 24px;
+    color: #333; /* Màu chữ */
 }
 
 .puzzle {
@@ -22,34 +24,51 @@ body {
     grid-template-rows: repeat(4, 50px);
     gap: 5px;
     margin: 20px 0;
+    background-color: #fff; /* Màu nền cho khu vực ô số */
+    border: 2px solid #ccc; /* Đường viền */
+    padding: 10px;
+    border-radius: 5px; /* Bo tròn góc */
 }
 
 button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    background-color: #4CAF50; /* Màu nút */
+    color: white; /* Màu chữ nút */
+    border: none;
+    border-radius: 3px; /* Bo tròn góc nút */
+    margin: 5px;
+}
+.puzzle-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Media query cho điện thoại */
 @media (max-width: 768px) {
     .title {
-        font-size: 4vw; /* Điều chỉnh kích thước font sử dụng vw */
-        margin-bottom: 2vh; /* Điều chỉnh margin sử dụng vh */
+        font-size: 4vw;
+        margin-bottom: 2vh;
     }
 
     .puzzle {
-        grid-template-columns: repeat(4, 12.5vw); /* Điều chỉnh columns sử dụng vw */
-        grid-template-rows: repeat(4, 12.5vw); /* Điều chỉnh rows sử dụng vw */
-        gap: 2vw; /* Điều chỉnh gap sử dụng vw */
-        margin: 10vw 0; /* Điều chỉnh margin sử dụng vw */
+        grid-template-columns: repeat(4, 12.5vw);
+        grid-template-rows: repeat(4, 12.5vw);
+        gap: 2vw;
+        margin: 10vw 0;
     }
 
     button {
         padding: 0;
-        width: 12.5vw; /* Điều chỉnh width của button sử dụng vw */
-        height: 12.5vw; /* Điều chỉnh height của button sử dụng vw */
-        font-size: 4vw; /* Điều chỉnh font size của button sử dụng vw */
-        border: 1px solid #ccc;
-        outline: none;
+        width: 12.5vw;
+        height: 12.5vw;
+        font-size: 4vw;
     }
+    .puzzle-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 }
