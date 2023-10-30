@@ -50,9 +50,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
         buttons.forEach((button, index) => {
             if (index < 15) {
-                button.style.backgroundColor = '#00FF00'; // Change numbered buttons to yellow
+                button.style.backgroundColor = '#FF6600'; // Change numbered buttons to yellow
             } else {
-                button.style.backgroundColor = '#00FF00'; // Change empty button to yellow
+                button.style.backgroundColor = '#FF6600'; // Change empty button to yellow
             }
             button.disabled = false;
         });
