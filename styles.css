@@ -57,11 +57,10 @@ button {
         grid-template-columns: repeat(4, 12.5vw);
         grid-template-rows: repeat(4, 12.5vw);
         gap: 2vw;
-        margin: 10vw 0;
         background-color: #fff; /* Màu nền cho khu vực ô số */
         border: 2px solid #ccc; /* Đường viền */
-        padding: 10px;
         border-radius: 5px; /* Bo tròn góc */
+            padding: 5px 10px 15px 10px;
     }
 
     button {
@@ -75,5 +74,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 0px;
+    margin-bottom: 0px;
 }
 }
