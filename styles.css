@@ -58,9 +58,14 @@ button {
         grid-template-rows: repeat(4, 12.5vw);
         gap: 2vw;
         margin: 10vw 0;
+        background-color: #fff; /* Màu nền cho khu vực ô số */
+        border: 2px solid #ccc; /* Đường viền */
+        padding: 10px;
+        border-radius: 5px; /* Bo tròn góc */
     }
 
     button {
+        background-color: #4CAF50;
         padding: 0;
         width: 12.5vw;
         height: 12.5vw;
