@@ -1,4 +1,3 @@
-/* CSS cho màn hình máy tính */
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -13,22 +12,23 @@ body {
 }
 
 .title {
-    font-size: 24px;
+    font-size: 4vw; /* Adjust the font size using vw */
+    margin-bottom: 2vh; /* Margin using vh */
 }
 
 #puzzle {
     display: grid;
-    grid-template-columns: repeat(4, 50px);
-    grid-template-rows: repeat(4, 50px);
-    gap: 5px;
-    margin: 20px 0;
+    grid-template-columns: repeat(4, 12.5vw); /* Adjust columns with vw */
+    grid-template-rows: repeat(4, 12.5vw); /* Adjust rows with vw */
+    gap: 2vw; /* Adjust gap with vw */
+    margin: 10vw 0; /* Margin using vw */
 }
 
 button {
     padding: 0;
-    width: 50px;
-    height: 50px;
-    font-size: 16px;
+    width: 12.5vw; /* Adjust button width with vw */
+    height: 12.5vw; /* Adjust button height with vw */
+    font-size: 4vw; /* Adjust font size with vw */
     cursor: pointer;
     border: 1px solid #ccc;
     outline: none;
@@ -38,22 +38,22 @@ button.empty {
     visibility: hidden;
 }
 
-/* CSS cho màn hình di động */
+/* Media query for smaller screens (e.g., mobile) */
 @media (max-width: 768px) {
     .title {
-        font-size: 18px; /* Đổi kích thước font cho điện thoại */
+        font-size: 20px; /* Adjust font size for smaller screens */
     }
 
     #puzzle {
-        grid-template-columns: repeat(4, 20vw); /* Đổi kích thước ô cho điện thoại */
-        grid-template-rows: repeat(4, 20vw); /* Đổi kích thước ô cho điện thoại */
-        gap: 3vw; /* Đổi kích thước ô cho điện thoại */
-        margin: 10vw 0; /* Đổi kích thước ô cho điện thoại */
+        grid-template-columns: repeat(4, 25vw); /* Adjust columns for smaller screens */
+        grid-template-rows: repeat(4, 25vw); /* Adjust rows for smaller screens */
+        gap: 5vw; /* Adjust gap for smaller screens */
+        margin: 10vw 0; /* Margin for smaller screens */
     }
 
     button {
-        width: 20vw; /* Đổi kích thước button cho điện thoại */
-        height: 20vw; /* Đổi kích thước button cho điện thoại */
-        font-size: 6vw; /* Đổi kích thước button cho điện thoại */
+        width: 25vw; /* Adjust button width for smaller screens */
+        height: 25vw; /* Adjust button height for smaller screens */
+        font-size: 8vw; /* Adjust font size for smaller screens */
     }
 }
